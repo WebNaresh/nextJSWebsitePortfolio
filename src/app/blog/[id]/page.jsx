@@ -3,9 +3,12 @@ import styles from "./page.module.css";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `https://vercel.com/webnaresh/nextjs/9yuRiZGXanMRS3WxQ5EbB7ZQ4EUR/api/posts/${id}`,
+    {
+      cache: "no-store",
+    }
+  );
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 

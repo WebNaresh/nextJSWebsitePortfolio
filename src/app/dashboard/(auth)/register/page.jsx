@@ -10,11 +10,8 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const name = e.target[0].value;
-    console.log(`🚀 ~ name:`, name);
     const email = e.target[1].value;
-    console.log(`🚀 ~ email:`, email);
     const password = e.target[2].value;
-    console.log(`🚀 ~ password:`, password);
     try {
       const res = await fetch("/api/auth/register", {
         method: "POST",
