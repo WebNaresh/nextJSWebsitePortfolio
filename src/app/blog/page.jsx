@@ -19,10 +19,9 @@ async function getData() {
 }
 const Blog = async () => {
   const data = await getData();
-  console.log(`🚀 ~ data:`, data);
   return (
     <div className={styles.mainContainer}>
-      {data.map((ele, i) => {
+      {data?.map((ele, i) => {
         return (
           <Link href={`/blog/${ele._id}`} className={styles.container} key={i}>
             <div className={styles.imageContainer}>
