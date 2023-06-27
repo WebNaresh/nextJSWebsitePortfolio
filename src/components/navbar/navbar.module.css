@@ -1,0 +1,25 @@
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-weight: bold;
+  font-style: 22px;
+}
+.link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.button {
+  padding: 5px;
+  bottom: none;
+  background-color: #53c28b;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: none;
+}
